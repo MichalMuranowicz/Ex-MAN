@@ -1,0 +1,81 @@
+<svg width="100%" viewBox="0 0 690 130" role="img" xmlns="http://www.w3.org/2000/svg" style="">
+  <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Baner MAN MOTOS → Excel</title>
+  <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Baner z logo MAN MOTOS po lewej i ikoną Excela po prawej, połączone gradientem symbolizującym migrację danych</desc>
+  <defs>
+    <linearGradient id="midGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C0392B;stop-opacity:1"/>
+      <stop offset="20%" style="stop-color:#E74C3C;stop-opacity:1"/>
+      <stop offset="40%" style="stop-color:#8E44AD;stop-opacity:1"/>
+      <stop offset="60%" style="stop-color:#2980B9;stop-opacity:1"/>
+      <stop offset="80%" style="stop-color:#27AE60;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1D6F3E;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="leftFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="rightFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1D6F3E;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#1D6F3E;stop-opacity:1"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <rect x="0" y="0" width="680" height="120" rx="10"/>
+    </clipPath>
+  <mask id="imagine-text-gaps-qq7tdn" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="690" height="130" fill="white"/><rect x="68.5062484741211" y="56" width="62.98749923706055" height="29.600000381469727" fill="black" rx="2"/><rect x="69.58125305175781" y="86" width="60.837501525878906" height="13.600000381469727" fill="black" rx="2"/><rect x="547.3062744140625" y="34.79999923706055" width="31.200000762939453" height="44" fill="black" rx="2"/><rect x="538.6000366210938" y="93.20000457763672" width="50.79999923706055" height="15.199999809265137" fill="black" rx="2"/><rect x="266" y="32" width="17.90000057220459" height="14.40000057220459" fill="black" rx="2"/><rect x="296" y="48" width="17.90000057220459" height="14.40000057220459" fill="black" rx="2"/><rect x="326" y="30" width="17.90000057220459" height="14.40000057220459" fill="black" rx="2"/><rect x="356" y="52" width="17.90000057220459" height="14.40000057220459" fill="black" rx="2"/><rect x="386" y="34" width="17.90000057220459" height="14.40000057220459" fill="black" rx="2"/></mask></defs>
+
+  <g clip-path="url(#clip)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    <!-- background gradient strip -->
+    <rect x="0" y="0" width="680" height="120" fill="url(#midGrad)" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+    <!-- left dark overlay for MAN logo area -->
+    <rect x="0" y="0" width="200" height="120" fill="#1a1a1a" style="fill:rgb(26, 26, 26);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <rect x="200" y="0" width="80" height="120" fill="url(#leftFade)" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+    <!-- right dark green overlay for Excel area -->
+    <rect x="480" y="0" width="200" height="120" fill="#1D6F3E" style="fill:rgb(29, 111, 62);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <rect x="400" y="0" width="80" height="120" fill="url(#rightFade)" style="stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+    <!-- flow particles / data lines -->
+    <g opacity="0.25" stroke="white" stroke-width="0.8" fill="none" style="fill:none;stroke:rgb(255, 255, 255);color:rgb(0, 0, 0);stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.25;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      <path d="M240 30 Q340 15 440 30" style="fill:none;stroke:rgb(255, 255, 255);color:rgb(0, 0, 0);stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+      <path d="M240 50 Q340 35 440 50" mask="url(#imagine-text-gaps-qq7tdn)" style="fill:none;stroke:rgb(255, 255, 255);color:rgb(0, 0, 0);stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+      <path d="M240 70 Q340 55 440 70" mask="url(#imagine-text-gaps-qq7tdn)" style="fill:none;stroke:rgb(255, 255, 255);color:rgb(0, 0, 0);stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+      <path d="M240 90 Q340 75 440 90" style="fill:none;stroke:rgb(255, 255, 255);color:rgb(0, 0, 0);stroke-width:0.8px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    </g>
+
+    <!-- arrows suggesting data flow -->
+    <g fill="white" opacity="0.5" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      <polygon points="390,55 378,49 378,61" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+      <polygon points="410,55 398,49 398,61" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+      <polygon points="430,55 418,49 418,61" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    </g>
+
+    <!-- MAN arch logo (simplified SVG recreation) -->
+    <!-- Background circle/emblem -->
+    <ellipse cx="100" cy="60" rx="44" ry="44" fill="#A0A0A0" opacity="0.15" style="fill:rgb(160, 160, 160);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.15;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <!-- MAN arch shape -->
+    <path d="M68 80 Q68 36 100 36 Q132 36 132 80" stroke="#C0C0C0" stroke-width="6" fill="none" stroke-linecap="round" mask="url(#imagine-text-gaps-qq7tdn)" style="fill:none;stroke:rgb(192, 192, 192);color:rgb(0, 0, 0);stroke-width:6px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <!-- MAN text -->
+    <text x="100" y="78" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="18" font-weight="900" fill="white" letter-spacing="3" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Arial Black&quot;, sans-serif;font-size:18px;font-weight:900;text-anchor:middle;dominant-baseline:auto">MAN</text>
+    <!-- MOTOS text below -->
+    <text x="100" y="96" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="400" fill="#cccccc" letter-spacing="4" style="fill:rgb(204, 204, 204);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:9px;font-weight:400;text-anchor:middle;dominant-baseline:auto">MOTOS</text>
+
+    <!-- Excel logo (simplified X icon) -->
+    <!-- Excel green icon block -->
+    <rect x="548" y="28" width="52" height="64" rx="4" fill="#217346" style="fill:rgb(33, 115, 70);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <rect x="540" y="34" width="46" height="52" rx="4" fill="#1D6F3E" style="fill:rgb(29, 111, 62);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <!-- White X on icon -->
+    <text x="563" y="68" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="white" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:28px;font-weight:900;text-anchor:middle;dominant-baseline:auto">X</text>
+    <!-- Excel label -->
+    <text x="564" y="104" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="400" fill="#a8d5b5" letter-spacing="2" style="fill:rgb(168, 213, 181);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Arial, sans-serif;font-size:10px;font-weight:400;text-anchor:middle;dominant-baseline:auto">EXCEL</text>
+
+    <!-- subtle data bits in transition zone -->
+    <g fill="white" opacity="0.15" font-family="monospace" font-size="9" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.15;font-family:monospace;font-size:9px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+      <text x="270" y="42" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:9px;font-weight:400;text-anchor:start;dominant-baseline:auto">01</text>
+      <text x="300" y="58" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:9px;font-weight:400;text-anchor:start;dominant-baseline:auto">10</text>
+      <text x="330" y="40" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:9px;font-weight:400;text-anchor:start;dominant-baseline:auto">11</text>
+      <text x="360" y="62" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:9px;font-weight:400;text-anchor:start;dominant-baseline:auto">00</text>
+      <text x="390" y="44" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(0, 0, 0);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:monospace;font-size:9px;font-weight:400;text-anchor:start;dominant-baseline:auto">01</text>
+    </g>
+  </g>
+</svg>

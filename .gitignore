@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local app output and logs
+debug/
+*.log
+*.xlsx
+config.json
+app.log
+
+# Windows build artifacts
+build/
+dist/
+*.exe
+
+# PyInstaller temporary files
+*.manifest
+*.toc
+MAN_Ekstraktor*.spec
+
+# Android / Gradle
+.gradle/
+.gradle-local/
+.android-sdk/
+.downloads/
+android/.android-sdk/
+android/.downloads/
+android/.gradle-local/
+android/ExMANAndroid/.gradle/
+android/ExMANAndroid/app/build/
+android/ExMANAndroid/build/
+android/ExMANAndroid/local.properties
+
+# Android release and signing artifacts
+*.apk
+*.aab
+*.idsig
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+
+# Android test output and emulator logs
+android/ExMANAndroid/desktop-test-output/
+android/ExMANAndroid/emulator-*.log
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local asset scratch files
+assets/banner_render.html

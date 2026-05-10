@@ -1,0 +1,5 @@
+selenium
+customtkinter
+openpyxl
+webdriver-manager
+pillow

@@ -1,0 +1,7 @@
+<resources>
+    <color name="exman_bg">#101418</color>
+    <color name="exman_panel">#18212B</color>
+    <color name="exman_text">#F4F7FA</color>
+    <color name="exman_muted">#AAB7C4</color>
+    <color name="exman_orange">#E8511A</color>
+</resources>
