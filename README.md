@@ -1,220 +1,201 @@
-# Ex MAN
+# Ex-MAN
 
-![Ex MAN banner](assets/man_motos_excel_banner.png)
+Cross-platform logistics automation tool for extracting structured transport data from a web-based logistics workflow and exporting it to Excel.
 
-Ex MAN is a two-platform automation project for extracting logistics data from the MAN MOTOS portal and exporting it to an Excel workbook.
+Ex-MAN contains a Windows desktop application and an Android application built around the same practical logistics workflow: collect selected records from a web portal, map them into structured logistics fields and export the result as an Excel workbook.
 
-The project contains:
+## Why This Project Matters
 
-- a Windows desktop app built with Python, customtkinter, Selenium and openpyxl,
-- a native Android app built in Java with WebView,
-- shared business rules for filtering records with code `20`,
-- Excel export to `MAN extract.xlsx`,
-- custom branding assets for the app icon and banner.
+Logistics work often involves repetitive data collection from web-based operational systems. Ex-MAN reduces that manual effort by turning portal data into a structured Excel workbook that can be reviewed, shared or imported into downstream processes.
 
-The repository is intended as a portfolio project showing practical automation, desktop UI, mobile WebView automation, data mapping and XLSX generation.
+The project focuses on practical value: clear data mapping, predictable export columns, a simple user interface and a workflow designed around real transport data collection needs.
 
-## Business Goal
+## Project Overview
 
-The application helps collect selected transport/order data from MAN MOTOS:
+This repository contains:
 
-1. log in to the MAN MOTOS portal,
-2. find units with code `20`,
-3. open each matching record,
-4. read logistics and vehicle details,
-5. map source fields to the agreed Excel columns,
-6. save the result as `MAN extract.xlsx`.
+- Windows desktop version
+- Android version
+- Excel export workflow
+- Web-based data extraction process
 
-The most important fields are VIN/reference numbers, pickup data, delivery data, dates and basic vehicle parameters.
+The desktop and mobile versions follow the same business goal but use different platform-specific implementations. The Windows app uses browser automation, while the Android app uses a WebView workflow.
 
-## Platforms
+## Key Features
 
-### Windows Desktop
+- Desktop automation workflow for collecting selected transport records
+- Android WebView workflow for mobile use
+- Structured Excel export to `MAN extract.xlsx`
+- Logistic data mapping for pickup, delivery, dates, VIN/reference values and vehicle details
+- Basic error handling for missing data, empty results and locked Excel output files
+- User-friendly interface with compact progress/status feedback
+- Secure credential handling notes for local usage and repository hygiene
 
-Location:
+## Technologies Used
 
-`man_extractor.py`
-
-Technology:
+### Desktop
 
 - Python
-- customtkinter
 - Selenium
-- Chrome / ChromeDriver
+- customtkinter
 - openpyxl
+- webdriver-manager
+- Pillow
 - PyInstaller
-
-Main features:
-
-- desktop UI named `Ex MAN`,
-- login and password fields,
-- optional local credential saving on Windows,
-- compact progress/status area instead of a large technical log box,
-- fast DOM reading with JavaScript executed through Selenium,
-- Excel export with fixed columns,
-- handling for locked Excel files.
-
-Current user-facing version in code:
-
-`Ex MAN v1.1`
 
 ### Android
 
-Location:
-
-`android/ExMANAndroid`
-
-Technology:
-
-- native Android app
 - Java
+- Android SDK
 - WebView
-- manually generated XLSX file
-- signed APK distribution
+- XLSX export workflow
 
-Main features:
+## My Role
 
-- app name `Ex MAN`,
-- MAN MOTOS login page opens immediately,
-- simplified interface with one main button: `Pobierz i zapisz`,
-- WebView-based portal access,
-- compact progress bar and status text,
-- export through the Android document picker,
-- return to the login screen after saving,
-- no local password saving on Android.
+I designed the business workflow, defined the data mapping rules, tested the extraction process, prepared the desktop and Android usage scenarios, reviewed AI-assisted code suggestions and organized the repository as a portfolio project.
 
-Minimum supported Android version:
+The project combines my logistics background with practical automation and AI-assisted software development.
 
-`Android 8.0`, `minSdk 26`
+## Security Notes
 
-## Data Mapping
+- Do not store credentials in the repository.
+- Do not commit exported Excel files.
+- Do not commit APK, EXE, keystore or private build artifacts directly to the repository.
+- Windows credentials, if saved, should rely on secure local mechanisms.
+- Android version should not store portal credentials locally.
+- Repository should contain no real user data, company data or session cookies.
 
-The final mapping rules are:
-
-| Source | Excel column |
-| --- | --- |
-| Constant value `MAN` | `NAZWA / SKROT` |
-| Main list `Vehic. no` | `VIN NUMER REFERENCYJNY` |
-| TO details `VIN` | `WYSZUKIWANIE` |
-| TO details `Type / cab` | `TOWAR NAZWA URZADZENIA` |
-| TO details `Total length` | `DLUGOSC [mm]` |
-| TO details `Height` | `WYSOKOSC [mm]` |
-| TO details `Weight` | `WAGA [kg]` |
-| TO details `Pick up until` | `ZALADUNEK PLANOWANA DATA` |
-| TO details `Latest delivery` | `DOSTAWA PLANOWANA DATA` |
-| TO details `Telephone number` | `NUMER TELEFONU` |
-| TO details `Pick up` address | pickup country, postal code, city and street columns |
-| TO details `Delivery` address | delivery country, postal code, city and street columns |
-| Vehicle details `Vehicle type` | appended to product name only for pickup street `Bialezyce 100` |
-
-Important distinction:
-
-- `Vehic. no` from the list is treated as the reference number,
-- `VIN` from TO details is treated as the search value.
-
-These two fields should not be swapped.
+More details are available in [docs/security.md](docs/security.md).
 
 ## Repository Structure
 
 ```text
-MAN_Ekstraktor/
-  man_extractor.py                         Windows desktop application
-  build_exe.bat                            Windows EXE build helper
-  Ex MAN.spec                              PyInstaller spec for the current EXE name
-  requirements.txt                         Python dependencies
-  README.md                                Main GitHub portfolio README
-  README_EXE.txt                           Short Windows distribution notes
-  assets/                                  Shared app icon and banner assets
-  dist/                                    Generated Windows EXE artifacts
-  build/                                   PyInstaller build output
+Ex-MAN/
+  README.md
+  README_EXE.txt
+  requirements.txt
+  build_exe.bat
+  Ex MAN.spec
+  man_extractor.py
+  assets/
+    ex_man.ico
+    ex_man_icon_256.png
+    man_motos_excel_banner.png
+    man_motos_excel_banner.svg
   android/
     ExMANAndroid/
-      app/src/main/java/com/exman/app/
-        MainActivity.java                  Android app logic
-      app/src/main/assets/
-        list_units.js                      list scraping script
-        details_extract.js                 detail scraping script
-        click_tab.js                       WebView click helper
-      app/src/main/res/                    Android resources
-      release/                             signed APK artifacts and signing files
+      README_ANDROID.md
+      build.gradle
+      settings.gradle
+      build_android_debug.bat
+      install_android_debug.bat
+      run_desktop_webview_test.bat
+      desktop_webview_test.py
+      app/
+        build.gradle
+        src/main/
+          AndroidManifest.xml
+          assets/
+            click_tab.js
+            details_extract.js
+            list_units.js
+          java/com/exman/app/
+            MainActivity.java
+          res/
+            drawable/
+            values/
+  docs/
+    architecture.md
+    workflow.md
+    security.md
+    roadmap.md
+    github-profile-note.md
 ```
 
-## Build Notes
+Generated builds, local SDK files, caches and private signing artifacts are intentionally excluded from the repository.
 
-### Windows EXE
+## Screenshots
 
-Build helper:
+Screenshots will be added in the next documentation update.
+
+Planned screenshot paths:
+
+- `docs/screenshots/windows-main.png`
+- `docs/screenshots/windows-export.png`
+- `docs/screenshots/android-main.png`
+- `docs/screenshots/excel-output.png`
+
+## How to Run - Desktop
+
+1. Install Python on Windows.
+2. Install Google Chrome.
+3. Install Python dependencies:
+
+```bat
+py -m pip install -r requirements.txt
+```
+
+4. Run the desktop application:
+
+```bat
+py man_extractor.py
+```
+
+5. Log in through the application UI, choose an export folder and start the extraction workflow.
+
+To build a Windows executable:
 
 ```bat
 build_exe.bat
 ```
 
-Expected final executable:
+The generated EXE should be distributed through GitHub Releases, not committed directly to the repository.
 
-```text
-dist\Ex MAN.exe
-```
+## How to Build - Android
 
-The target computer needs Google Chrome. Python is not required for the final one-file EXE.
-
-### Android APK
-
-Android project:
-
-```text
-android\ExMANAndroid
-```
-
-Debug build helper:
+1. Open `android/ExMANAndroid` in Android Studio, or use the included helper scripts.
+2. Make sure Android SDK and build tools are installed.
+3. Build a debug APK:
 
 ```bat
-build_android_debug.bat
+android\ExMANAndroid\build_android_debug.bat
 ```
 
-Install helper:
+4. Install on a connected test device:
 
 ```bat
-install_android_debug.bat
+android\ExMANAndroid\install_android_debug.bat
 ```
 
-Release artifacts are currently stored under:
+Release APKs, AAB files and signing keys should not be committed to the repository. Publish release builds through GitHub Releases when needed.
 
-```text
-android\ExMANAndroid\release
-```
+## Documentation
 
-## Security Notes
+- [Architecture](docs/architecture.md)
+- [Workflow](docs/workflow.md)
+- [Security](docs/security.md)
+- [Roadmap](docs/roadmap.md)
+- [GitHub profile note](docs/github-profile-note.md)
 
-- The project does not contain MAN MOTOS credentials.
-- The Windows app can remember credentials only when the user explicitly enables it.
-- Windows saved credentials are protected with Windows DPAPI for the current user profile.
-- The Android app does not store the login or password locally as a project assumption.
-- The Android app communicates with MAN MOTOS through WebView and writes only the selected XLSX export.
-- This is a practical architecture review, not a formal security audit.
+## Roadmap
 
-## GitHub Portfolio Notes
+- Add screenshots to the README
+- Publish APK and Windows build through GitHub Releases
+- Add anonymized sample Excel output
+- Split the Python desktop application into smaller modules
+- Add logging improvements
+- Add user-friendly error messages
+- Add basic automated tests for data mapping
+- Improve Android UI polish
+- Add a configuration file example without sensitive data
 
-Before publishing this repository publicly, review generated and private files carefully:
+See [docs/roadmap.md](docs/roadmap.md) for the full roadmap.
 
-- do not publish private credentials,
-- do not publish production signing keys such as `.jks` files,
-- consider moving generated EXE/APK files to GitHub Releases instead of committing them,
-- consider excluding local SDK/build folders such as `.android-sdk`, `.gradle`, `build`, `dist` and Android build outputs,
-- keep screenshots and branding assets that help present the project.
+## License
 
-Suggested portfolio angle:
+No license has been selected yet. Until a license is added, all rights are reserved by the repository owner.
 
-- desktop automation with Selenium and JavaScript DOM extraction,
-- native Android WebView automation,
-- cross-platform implementation of the same business workflow,
-- Excel generation and fixed-column data mapping,
-- practical UI simplification based on user feedback,
-- performance optimization from slow selector-heavy scraping to faster DOM-based extraction.
+## Portfolio Note
 
-## Limitations
-
-- MAN MOTOS access requires valid user credentials and network access.
-- The portal layout is external and can change, which may require updates to selectors or DOM parsing logic.
-- Not every Excel column is always populated; priority is correctness of key logistics fields.
-- Android export behavior depends on the system document picker and may create names such as `MAN extract (1).xlsx`.
+This project demonstrates practical process automation, logistics domain knowledge and AI-assisted software development. It shows how a repetitive operational workflow can be turned into a focused desktop and mobile tool with structured Excel output.
 

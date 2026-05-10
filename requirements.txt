@@ -1,3 +1,5 @@
+# For reproducible builds, consider pinning dependency versions after verifying the tested environment.
+
 selenium
 customtkinter
 openpyxl

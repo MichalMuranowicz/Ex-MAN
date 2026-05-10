@@ -2,6 +2,12 @@
 __pycache__/
 *.py[cod]
 *.pyo
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -12,6 +18,7 @@ debug/
 *.xlsx
 config.json
 app.log
+*.local
 
 # Windows build artifacts
 build/
@@ -35,6 +42,7 @@ android/ExMANAndroid/.gradle/
 android/ExMANAndroid/app/build/
 android/ExMANAndroid/build/
 android/ExMANAndroid/local.properties
+android/ExMANAndroid/.cxx/
 
 # Android release and signing artifacts
 *.apk
